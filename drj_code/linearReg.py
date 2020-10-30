@@ -15,7 +15,8 @@ trainX, testX, trainY, testY = sklearn.model_selection.train_test_split(
     digitsX, digitsY, test_size = 0.2, shuffle = True
 )
 
-regModel = sklearn.linear_model.LinearRegression()
+#regModel = sklearn.linear_model.LinearRegression()
+regModel = sklearn.linear_model.RidgeClassifier()
 regModel.fit(trainX, trainY)
 preds = regModel.predict(testX)
 for index, pred in enumerate(preds):

@@ -25,7 +25,7 @@ estimator = sklearn.cluster.KMeans(
 
 # The sample code in scikit-learn's documentation scales the data this way
 # This linearly scales the data by subtracting the mean and dividing by the
-#   standard deviation, which gives a (not necessarily normal) distribution
+#   standard deviation, which gives a (not necessariluy normal) distribution
 #   with mean 0, s.d. 1.
 scaledData = sklearn.preprocessing.scale(digitsX)
 # Choose one of the two pairs of lines below to use scaled/unscaled data.

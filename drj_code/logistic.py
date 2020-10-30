@@ -23,7 +23,7 @@ incorrect = 0
 for pred, gt in zip(preds, testY):
     if pred == gt: correct += 1
     else: incorrect += 1
-print("Correct: {correct}, Incorrect: {incorrect}, % Correct: {correct/(correct + incorrect): 5.2}")
+print(f"Correct: {correct}, Incorrect: {incorrect}, % Correct: {correct/(correct + incorrect): 5.2}")
 
 plot_confusion_matrix(classifier, testX, testY)
 pyplot.show()
